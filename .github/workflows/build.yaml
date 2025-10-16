@@ -2,7 +2,7 @@ name: Build employees project
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 
