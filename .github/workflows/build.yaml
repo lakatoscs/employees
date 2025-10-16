@@ -109,7 +109,7 @@ jobs:
                     context: .
                     file: Dockerfile.layers
                     push: true
-                    tags: ghcr.io/${{ github.repository }}:latest, ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+                    tags: ghcr.io/${{ github.repository }}:latest,ghcr.io/${{ github.repository }}:${{ env.version }}
 
     deploy:
         runs-on: ubuntu-latest
