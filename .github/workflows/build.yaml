@@ -130,7 +130,7 @@ jobs:
 
             - name: Update deployment manifest
               run: |
-                    yq e '.image.tag = ${{ env.version }}' -i values.yaml
+                    yq e '.image.tag = "${{ env.VERSION }}"' -i values.yaml
                     cat values.yaml
             - name: Commit and push changes
               run: |
