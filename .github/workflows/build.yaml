@@ -136,5 +136,5 @@ jobs:
               run: |
                     git config --global user.name 'github-actions'
                     git config --global user.email 'github-actions@users.noreply.github.com'
-                    git commit -m "Update image tag to ${{ env.version }}"
+                    git commit -am "Update image tag to ${{ env.version }}"
                     git push origin main
